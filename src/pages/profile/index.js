@@ -1,4 +1,5 @@
 import React from "react";
+import WithAuthentication from "../../helper/components/with-authentication";
 
 const Profile = () => {
   return (
@@ -8,4 +9,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default WithAuthentication(Profile);

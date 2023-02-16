@@ -1,14 +1,14 @@
 export const routes =[
     {
         path: '/',
-        title: 'SignIn',
-        component: 'Signin',
+        title: 'signin',
+        component: 'signin',
         privatePath:false
       },
       {
         path: '/profile',
-        title: 'Profile',
-        component: 'Profile',
+        title: 'profile',
+        component: 'profile',
         privatePath: true
       }
 ]

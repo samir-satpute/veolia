@@ -14,7 +14,7 @@ const WithAuthentication = (Component) => {
       // as per requirement add conditional check
 
       // if (!localStorage.getItem("accessToken")) {
-      if (!localStorage.getItem('isAuthenticated')) {
+      if (localStorage.getItem('isAuthenticated')===false) {
         
         navigate("/");
       }

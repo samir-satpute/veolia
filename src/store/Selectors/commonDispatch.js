@@ -1,15 +1,22 @@
-import { setUser } from "../../store/reducers/Common/commonReducer";
+import { setUser, removeCurrentUser } from "../../store/reducers/Common/commonReducer";
 export const mapDispatchToProps = dispatch => {
     return {
-        setUser: () => {
+        setUser: (paylaod) => {
             dispatch(setUser({
 
-                name: 'sagar',
+                name: paylaod.name,
                 role: 'user',
                 isSignedIn: true
 
             }))
+        },
+        removeCurrentUser: () => {
+            dispatch(removeCurrentUser())
         }
 
     }
+
+
+
+
 }

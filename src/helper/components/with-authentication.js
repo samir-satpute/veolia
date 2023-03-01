@@ -10,9 +10,9 @@ const WithAuthentication = (Component) => {
       // as per requirement add conditional check
 
       // if (!localStorage.getItem("accessToken")) {
-      if (true) {
-        navigate("/");
-      }
+      // if (true) {
+      //   navigate("/");
+      // }
     }, []);
 
     return <Component {...props} />;

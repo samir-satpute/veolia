@@ -1,14 +1,22 @@
 export const routes =[
     {
-        path: '/',
+        path: '',
         title: 'SignIn',
         component: 'Signin',
         privatePath:false
       },
       {
-        path: '/profile',
+        path: 'profile',
         title: 'Profile',
         component: 'Profile',
-        privatePath: true
+        privatePath: true,
+        subNav:[
+          {
+            path: 'name',
+            title: 'Name',
+            component: 'Name',
+            privatePath: true
+          }
+        ]
       }
 ]
